@@ -86,7 +86,7 @@ main{
   font-size: 7vmin;
   margin: 7px 0;
 }
-.hero-section .info button
+.button1
 {
   background-color: black;
   color: white;
@@ -128,6 +128,115 @@ main{
 .popular
 {
   padding: 30px;
+}
+.products-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.product
+{
+  width: 250px;
+  margin: 10px;
+}
+.product img 
+{
+  width: 100%;
+  height: 300px;
+}
+.product .category
+{
+  color: grey;
+  font-size: 13px;
+}
+.product h4
+{
+  font-weight: 1500;
+  font-size: 20px;
+}
+.product .price
+{
+  font-size: 14px;
+  color: grey;
+  font-weight: 900;
+}
+.variations
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.variations div
+{
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid grey;
+  margin: 5px;
+}
+.variations .black
+{
+  background-color: black;
+}
+.variations .red
+{
+  background-color: tomato;
+}
+/* collection container */
+.base-collection
+{
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+}
+.base-collection .cont1, .base-collection .cont2
+{
+  width: 50%;
+  margin: 0 10px;
+}
+.base-collection .cont1 img
+{
+  width: 100%;
+  height: 350px;
+}
+.base-collection .cont2 img
+{
+  width: 100%;
+  height: 100%;
+}
+.base-collection .cont1 .heading
+{
+  font-size: 40px;
+}
+/* new collection */
+.new-collection
+{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url(./assets/fashion-styles.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.new-collection p
+{
+  color: white !important;
+  padding: 10px;
+}
+.new-collection h3
+{
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+.new-collection h4
+{
+  font-size: 35px;
+  padding-bottom: 10px;
 }
 /* Mobile */
 @media only screen and (max-width:768px)

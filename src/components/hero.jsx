@@ -8,7 +8,7 @@ const HeroSection = () => {
             <div className="info">
                 <p>Women</p>
                 <h2>Slick. Modern . Awesome.</h2>
-                <button>Shop Collection</button>
+                <button className='button1'>Shop Collection</button>
             </div>
             <div className="design">
                 <img src={heroBlob} alt=""  className='hero-blob'/>
