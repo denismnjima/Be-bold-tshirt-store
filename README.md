@@ -1,2 +1,8 @@
-# Be bold shop
-This a an online t-shirt store design. In this version it is just a homepage made with react.
+# Be bold shop v1
+Be bold is an online store for selling shirts. This version only involves a homepage. The next version will invlove a database systems.
+
+## TECH STACK
+- React Js
+
+## running
+clone and run <b> npm start </b> on the terminal.
