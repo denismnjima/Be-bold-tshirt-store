@@ -209,6 +209,35 @@ main{
 {
   font-size: 40px;
 }
+/* new collection */
+.new-collection
+{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url(./assets/fashion-styles.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.new-collection p
+{
+  color: white !important;
+  padding: 10px;
+}
+.new-collection h3
+{
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+.new-collection h4
+{
+  font-size: 35px;
+  padding-bottom: 10px;
+}
 /* Mobile */
 @media only screen and (max-width:768px)
 {
