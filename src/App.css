@@ -86,7 +86,7 @@ main{
   font-size: 7vmin;
   margin: 7px 0;
 }
-.hero-section .info button
+.button1
 {
   background-color: black;
   color: white;
@@ -182,6 +182,32 @@ main{
 .variations .red
 {
   background-color: tomato;
+}
+/* collection container */
+.base-collection
+{
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+}
+.base-collection .cont1, .base-collection .cont2
+{
+  width: 50%;
+  margin: 0 10px;
+}
+.base-collection .cont1 img
+{
+  width: 100%;
+  height: 350px;
+}
+.base-collection .cont2 img
+{
+  width: 100%;
+  height: 100%;
+}
+.base-collection .cont1 .heading
+{
+  font-size: 40px;
 }
 /* Mobile */
 @media only screen and (max-width:768px)
