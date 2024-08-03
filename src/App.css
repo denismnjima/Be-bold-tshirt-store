@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family:dmsans;
+  src: url('../public/fonts/dmsans.ttf');
+}
+*{
+  font-family: dmsans;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NABBAR */
+header
+{
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .logo
+{
+  font-size: 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-menu ul
+{
+  display: flex;
+  list-style: none;
+}
+.header-menu li
+{
+  margin: 10px;
+  font-size: 14px;
+}
+.header-icons ul
+{
+  display: flex;
+  list-style: none;
+}
+.header-icons li
+{
+  margin: 10px;
+  font-size: 14px;
+}
+.header-price
+{
+  font-weight: 800;
+}
+.header-cart
+{
+  stroke: black;
+  stroke-width: .8px;
+}
+.menu-icon,.close-menu
+{
+  margin-right: 10px;
+  display: none;
+}
+/*===============HERO SECTION ============  */
+main{
+  width: 100%;
+  height: 80vh;
+}
+.hero-section
+{
+  background-color: #FAEDEB;
+  height: 100%;
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-section .info 
+{
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 25%;
+}
+.hero-section .info p
+{
+  color: grey;
+}
+.hero-section .info h2
+{
+  font-size: 7vmin;
+  margin: 7px 0;
+}
+.hero-section .info button
+{
+  background-color: black;
   color: white;
+  width: fit-content;
+  padding: 12px 24px;
+  border:none;
 }
-
-.App-link {
-  color: #61dafb;
+.hero-section .design
+{
+  height: 100%;
+  width: 40%;
+  position: relative;
 }
+.hero-blob
+{
+  width: 600px;
+  height: 60vh;
+}
+.hero-img{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width:600px;
+  height: 100%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+/* Popular section */
+.tag--show
+{
+  color: grey;
+  text-align: center;
+}
+.headding
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+.popular
+{
+  padding: 30px;
+}
+/* Mobile */
+@media only screen and (max-width:768px)
+{
+/* NAVBAR */
+  .menu-icon
+  {
+    display: block;
+    margin-left: -20px;
   }
-  to {
-    transform: rotate(360deg);
+  .header-menu
+  {
+    position: fixed;
+    top: 0px;
+    background-color: #00000049;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    padding: 20px 5px;
+    z-index: 100;
+    
   }
+  .toggle-menu
+  {
+    display: block;
+  }
+  .header-menu ul
+  {
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    margin-top: -10px;
+    padding-top: 20px;
+  }
+  .header-menu li
+  {
+    background-color: #FCEDEB;
+    margin: 0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .header-menu li:hover
+  {
+    background-color: white;
+    transition: .5s;
+  }
+  .header-login, .header-search
+  {
+    display: none;
+  }
+  .close-menu
+  {
+    display: block;
+    background-color: transparent !important;
+    text-align: right;
+    font-size: 35px !important;
+  }
+  .hero-section
+  {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .hero-section .info 
+  {
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+    align-items: center;
+  
+
+  }
+  .hero-section .design
+  {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .hero-blob
+  {
+    width: 400px;
+
+  }
+  .hero-img
+  {
+    width: 200px !important;
+    height: auto;
+    top: 200px;
+    bottom: 10px;
+  }
+
 }
